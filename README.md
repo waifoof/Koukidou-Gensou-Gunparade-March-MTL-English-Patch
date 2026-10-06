@@ -2,7 +2,7 @@
 
 An English fan translation patch for **Koukidou Gensou: Gunparade March** (高機動幻想ガンパレード・マーチ), the 2000 PlayStation game by Alfa System / Sony Computer Entertainment (Japan, SCPS-10136).
 
-**Latest release: [v0.8](../../releases/latest)**
+**Latest release: [v0.9.1](../../releases/latest)**
 
 ![Title screen](0_title.png) ![Dialogue](1_dialogue.png)
 ![Field](2_field.png) ![Battle menu](3_battle_menu.png)
@@ -47,7 +47,7 @@ This matches the Redump dump. If your image doesn't match, the patch won't apply
    - Windows: Delta Patcher or xdelta UI
    - Command line:
      ```
-     xdelta3 -d -s "Koukidou Gensou - Gunparade March (Japan).bin" "Gunparade March (English v0.8).xdelta" "Gunparade March (English v0.8).bin"
+     xdelta3 -d -s "Koukidou Gensou - Gunparade March (Japan).bin" "Gunparade March (English v0.9.1).xdelta" "Gunparade March (English v0.9.1).bin"
      ```
 3. Keep the patched `.bin` next to the included `.cue`, and load the `.cue` in your emulator.
 
@@ -66,6 +66,14 @@ Found a freeze, a crash or untranslated text? Please [open an issue](../../issue
 
 ## Changelog
 
+**v0.9.1**
+- Maintenance screen: removed a stray text code in front of "SMG" in the weapon list.
+- Maintenance screen: the 40mm anti-aircraft gun was mislabeled "20mm".
+- Checked every translated file against the memory it loads into; all fit.
+
+**v0.9**
+- Shortened two NPC chatter files to fit the game's memory limit, with a build check for all chatter files.
+
 **v0.8**
 - Fixed two story events that could freeze the game.
 - Bulletin board name boxes now show readable short names instead of cut-off fragments.
@@ -74,6 +82,10 @@ Found a freeze, a crash or untranslated text? Please [open an issue](../../issue
 
 **v0.7**
 - First public release.
+
+## Translation source
+
+The full translation source (every Japanese line next to its English) is in `gpm_translation_source.zip` in this repo.
 
 ## Legal
 
