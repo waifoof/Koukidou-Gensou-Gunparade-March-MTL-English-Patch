@@ -2,7 +2,7 @@
 
 An English fan translation patch for **Koukidou Gensou: Gunparade March** (高機動幻想ガンパレード・マーチ), the 2000 PlayStation game by Alfa System / Sony Computer Entertainment (Japan, SCPS-10136).
 
-**Latest release: [v0.9.1](../../releases/latest)**
+**Latest release: [v1.0](../../releases/latest) (final)**
 
 ![Title screen](0_title.png) ![Dialogue](1_dialogue.png)
 ![Field](2_field.png) ![Battle menu](3_battle_menu.png)
@@ -47,7 +47,7 @@ This matches the Redump dump. If your image doesn't match, the patch won't apply
    - Windows: Delta Patcher or xdelta UI
    - Command line:
      ```
-     xdelta3 -d -s "Koukidou Gensou - Gunparade March (Japan).bin" "Gunparade March (English v0.9.1).xdelta" "Gunparade March (English v0.9.1).bin"
+     xdelta3 -d -s "Koukidou Gensou - Gunparade March (Japan).bin" "Gunparade March (English v1.0).xdelta" "Gunparade March (English v1.0).bin"
      ```
 3. Keep the patched `.bin` next to the included `.cue`, and load the `.cue` in your emulator.
 
@@ -55,6 +55,7 @@ This matches the Redump dump. If your image doesn't match, the patch won't apply
 
 - Tested in PCSX-ReARMed. It should work in DuckStation and other accurate emulators.
 - Memory card saves work normally. Emulator save states from a different patch version won't.
+- **SwanStation (including PS5):** if you see noise or garbage in the right half of dialogue boxes, turn on anti-aliasing (MSAA) or set the GPU renderer to Software in Core Options. This is an emulator rendering quirk, not a problem with the patch.
 
 ## Testing
 
@@ -65,6 +66,11 @@ Each release is checked by:
 Found a freeze, a crash or untranslated text? Please [open an issue](../../issues) with the in-game date, where you were and a screenshot if you can.
 
 ## Changelog
+
+**v1.0 (final)**
+- Full review of the whole script: every event and all menu, battle, conversation and proposal text re-checked against the Japanese. About 470 lines fixed (meaning errors, wrong speakers, flipped negations, typos, stiff phrasing).
+- Names and terms made consistent between events and menus (Shikon tuning stats, "Leap", "Barrage", "Class Rep", the Gunparade March song refrain, Akira's name in item names).
+- Fixed line breaks in the Shikon Unit selection and work results menus.
 
 **v0.9.1**
 - Maintenance screen: removed a stray text code in front of "SMG" in the weapon list.
